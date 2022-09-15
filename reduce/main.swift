@@ -7,5 +7,26 @@
 
 import Foundation
 
-print("Hello, World!")
+var evenSum = Array(1...10)
+    .filter { (number) in number % 2 == 0 }
+    .reduce(100) { (total, number) in total + number }
 
+print(evenSum)
+
+evenSum = Array(1...10) .reduce(evenSum) { (total, n) in total + n / 2 * 3}
+
+print(evenSum)
+
+var d = "Hi gerls"
+var ar = Array(d)
+print(ar)
+
+var ar2 = Array(repeating: d, count: 5)
+print(ar2)
+
+//var ar3 = Array(from: d)
+//print(ar2)
+
+var evenSum2: [Int] = [1, 3, 5, 6, 7]
+evenSum2.reduce(100) { (total, number) in total + number }
+print(evenSum2)
