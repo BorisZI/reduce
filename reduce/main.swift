@@ -27,6 +27,6 @@ print(ar2)
 //var ar3 = Array(from: d)
 //print(ar2)
 
-var evenSum2: [Int] = [1, 3, 5, 6, 7]
-evenSum2.reduce(100) { (total, number) in total + number }
+let evenSum2 = [1, 3, 5, 6, 7]
+    .reduce("evenSum2: ") { (total, evenSum2) in total + "\(evenSum2)" }
 print(evenSum2)
